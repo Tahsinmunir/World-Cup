@@ -1,0 +1,31 @@
+.top-section {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    width: 1196px;
+    flex-direction: column;
+}
+
+.top-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+}
+
+.ban-text {
+    color: white;
+    text-align: start;
+}
+
+background-color: red;
+
+}
+
+.ban-img {
+    width: 50%;
+}
