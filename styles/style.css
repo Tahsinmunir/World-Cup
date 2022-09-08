@@ -1,31 +1,59 @@
-.top-section {
-    background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
 
 }
 
-.container {
-    display: flex;
-    width: 1196px;
-    flex-direction: column;
-}
-
 .top-banner {
+    width: 1321px;
+    height: 646px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: black;
+    background-color: #161616;
+    border-radius: 30px;
 }
 
 .ban-text {
     color: white;
     text-align: start;
+    margin-left: 111px;
+    margin-top: 106px;
 }
 
-background-color: red;
+.ban-text h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
 
+.ban-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.anchor-button {
+    text-decoration: none;
+    background-color: #DD0000;
+    border-radius: 5px;
+    padding: 16px 25px;
+}
+
+.fa-light {
+    color: white;
 }
 
 .ban-img {
-    width: 50%;
+    height: 613px;
+    margin-top: 33px;
+    width: auto;
 }
