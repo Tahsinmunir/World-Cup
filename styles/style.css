@@ -4,10 +4,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+main {
+    position: relative;
+    min-height: 2200px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 1321px;
+    height: 646px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* top section styles */
@@ -15,12 +24,10 @@ body {
 .top-banner {
     width: 1321px;
     height: 646px;
-    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #161616;
     border-radius: 30px;
-    margin-bottom: 130px;
 }
 
 .ban-text {
@@ -61,28 +68,109 @@ body {
     width: auto;
 }
 
-/* matches section styles */
+/* ---------------------------
+    matches section styles
+--------------------------- */
 
-.matches-section {
-
+.potions-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr 3fr);
     gap: 24px;
 }
 
-.options {
+.options-menu {
     background-color: #161616;
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    gap: 30px;
+    height: 252px;
+    width: 252px;
+    border-radius: 10px;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
 }
 
 .option {
     background-color: #FFFFFF;
+    text-align: center;
     border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
 }
 
 #selected {
     background-color: #DD0000;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.match {
+    border: 1px solid gainsboro;
+    box-shadow: 1px 1px gainsboro;
+    border-radius: 10px;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.description h3 {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.match-details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-clock,
+.fa-message-dots {
+    color: gray;
+    margin-right: 20px;
+}
+
+/* goal section styles */
+
+footer {
+    position: relative;
+    margin: 0;
+    background-color: #161616;
+    color: white;
+    height: 444px;
+}
+
+.goal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.goal h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.Wed-details {
+    display: flex;
+    justify-content: center;
+
+}
+
+.detail-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
 }
