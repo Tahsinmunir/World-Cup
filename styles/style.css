@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-* {
+body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -75,18 +76,13 @@ main {
 .potions-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr 3fr);
-    gap: 24px;
-}
-
-.options-menu {
-    background-color: #161616;
-    height: 252px;
-    width: 252px;
-    border-radius: 10px;
-
+    column-gap: 10px;
 }
 
 .options {
+    background-color: #161616;
+    height: 312px;
+    width: 312px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -107,7 +103,8 @@ main {
 .matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .match {
@@ -115,6 +112,36 @@ main {
     box-shadow: 1px 1px gainsboro;
     border-radius: 10px;
 }
+
+.upcomming-match {
+    border: 1px solid gainsboro;
+    box-shadow: 1px 1px gainsboro;
+    border-radius: 10px;
+}
+
+.match-imgs {
+    display: flex;
+    justify-content: center;
+    margin-left: 45px;
+    margin-top: 45px;
+    margin-right: 45px;
+}
+
+.match-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-description h2 {
+    margin-bottom: 5px;
+}
+
+.match-description p {
+    margin-top: 5px;
+}
+
 
 .description {
     margin-left: 20px;
